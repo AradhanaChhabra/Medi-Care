@@ -2,7 +2,7 @@ import React from 'react'
 import { MobileIcon, Nav, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu } from './NavElements'
 import {FaBars} from 'react-icons/fa'
 
-export default function Navbar() {
+export default function Navbar({toggle}) {
     return (
         <>
             <Nav>
@@ -10,7 +10,7 @@ export default function Navbar() {
                     <NavLogo to='/'>
                         MediCare
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>
