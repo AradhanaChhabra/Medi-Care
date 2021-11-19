@@ -40,7 +40,7 @@ export const VideoBg = styled.video`
     height: 100%;
     --o-object-fit:cover;
     object-fit:cover ;
-    background: #d9a6ff;
+    background: #e1b8ff;
 `
 export const PageContent = styled.div`
 z-index:3;

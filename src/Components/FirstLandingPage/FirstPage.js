@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { FirstBg, FirstContainer, VideoBg ,PageContent,PageH1,PageP,BtnWrapper,ArrowForward,ArrowRight} from './FirstPageElements'
-import Video from '../../assets/video5.mp4'
+import Video from '../../assets/video2.mp4'
 import { Button } from '../../ui/Button'
 
 export const FirstPage = () => {
