@@ -23,9 +23,13 @@ export const homeObjGoals = {
     headline: 'We focus on...',
     description: <>
         {/* style={{'list-style-type':'none'}} */}
-        <span style={{display:"block",marginBottom:'15px'}}>Keeping and maintaining logs of personal medical records.</span>
-        <span style={{display:"block",marginBottom:'15px'}}>Making appointments with physicians, medical tests, vaccinations etc.</span>
-        <span style={{display:"block",marginBottom:'15px'}}>Visualizing medical/health data by means of statistics and graph.</span></>
+        <span style={{display:"block",marginBottom:'20px'}}>Minimsing the burden of storing and carrying health records for every visit to the doctor.</span>
+        <span style={{ display: "block", marginBottom: '20px' }}>Instant Access
+            <span style={{ display: "block", marginBottom: '7px', marginLeft: '20px' }}>- to the patient’s case history</span>
+            <span style={{ display: "block", marginBottom: '7px', marginLeft: '20px' }}> –the treatment undertaken</span>
+            <span style={{ display: "block", marginBottom: '7px', marginLeft: '20px' }}>-where and with what outcomes</span>
+            enabling more accurate diagnosis and treatment.</span>
+        <span style={{display:"block",marginBottom:'20px'}}>Visualizing medical/health data by means of statistics and graph.</span></>
     ,
     buttonLabel: 'Learn More',
     imgStart: true,
