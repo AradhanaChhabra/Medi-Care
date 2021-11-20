@@ -21,7 +21,7 @@ export default function SignIn() {
   }
   // console.log(isLogin);
     return (
-        <>
+        <div className="wrapper">
             <div className="login">
         <div className="container">
         {/* <h3 className="heading">HACK YOUR EXPENSES !</h3> */}
@@ -35,7 +35,7 @@ export default function SignIn() {
             onClick={changeState}
           />
       </div>
-        </>
+      </div>
     )
 }
 

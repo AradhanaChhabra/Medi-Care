@@ -1,7 +1,7 @@
 import './App.css';
 // import { BrowserRouter as Router } from 'react-router-dom';
 // import { First } from './pages/First';
-import SignIn from './Components/SignIn';
+import SignInPage from './pages/SignInPage';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         {/* <First /> */}
         {/* <SignIn/>
       </Router> */}
-      <SignIn/>
+        <SignInPage/>
       
     </div>
     
