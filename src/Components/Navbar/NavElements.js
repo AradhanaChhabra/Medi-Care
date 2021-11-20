@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
     max-width: 1100px; 
 `
 export const NavLogo = styled(LinkR)`
-    color:#F7F7F7;
+    color:#fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size:1.5rem;
@@ -70,7 +70,7 @@ export const NavItem = styled.li`
     height:80px;
 `
 export const NavLinks = styled(LinkS)`
-    color: #F7F7F7;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;

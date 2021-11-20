@@ -9,7 +9,7 @@ import svg2 from '../assets/svg7.svg';
 import svg3 from '../assets/svg4.svg';
 import { Services } from '../Components/Services/Services';
 
-export const First = () => {
+const First = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -26,3 +26,5 @@ export const First = () => {
         </>
     )
 }
+
+export default First;
