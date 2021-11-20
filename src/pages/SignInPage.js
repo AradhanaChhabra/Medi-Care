@@ -1,11 +1,9 @@
 import React from 'react'
-import SignIn from '../Components/SignIn/index'
-import './signIn.scss'
+import SignIn from '../Components/SignIn'
 
-export default SignInPage = () => {
+export default function SignInPage(){
     return (
-            <SignIn/>            
+        <SignIn/>
     )
 }
-
 
