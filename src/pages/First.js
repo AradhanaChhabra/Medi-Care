@@ -8,6 +8,7 @@ import svg1 from '../assets/svg5.svg';
 import svg2 from '../assets/svg7.svg';
 import svg3 from '../assets/svg4.svg';
 import { Services } from '../Components/Services/Services';
+import Footer from '../Components/Footer/Footer';
 
 const First = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const First = () => {
             <Services/>
             <InfoIndex {...homeObjSpecs} img={svg2} />
             <InfoIndex {...homeObjGoals} img={svg3} />
+            <Footer/>
         </>
     )
 }
