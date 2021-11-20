@@ -1,4 +1,4 @@
-export const homeObjOne = {
+export const homeObjAbout = {
     id: 'about',
     lightBg: false,
     lightText: true,
@@ -14,7 +14,7 @@ export const homeObjOne = {
     darkText:false
 }
 
-export const homeObjTwo = {
+export const homeObjGoals = {
     id: 'goals',
     lightBg: true,
     lightText: false,
@@ -35,7 +35,7 @@ export const homeObjTwo = {
     darkText:true
 }
 
-export const homeObjThree = {
+export const homeObjSpecs = {
     id: 'specifications',
     lightBg: false,
     lightText: true,

@@ -3,10 +3,11 @@ import Sidebar from '../Components/Sidebar/Sidebar'
 import Navbar from '../Components/Navbar/Navbar'
 import { FirstPage } from '../Components/FirstLandingPage/FirstPage';
 import { InfoIndex } from '../Components/InfoSection/InfoIndex';
-import { homeObjOne, homeObjThree, homeObjTwo } from '../Components/InfoSection/Data';
+import { homeObjAbout, homeObjGoals, homeObjSpecs } from '../Components/InfoSection/Data';
 import svg1 from '../assets/svg5.svg';
 import svg2 from '../assets/svg7.svg';
 import svg3 from '../assets/svg4.svg';
+import { Services } from '../Components/Services/Services';
 
 export const First = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,10 @@ export const First = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
             <Navbar toggle={toggle}></Navbar>
             <FirstPage />
-            <InfoIndex {...homeObjOne} img={svg1} />
-            <InfoIndex {...homeObjTwo} img={svg2} />
-            <InfoIndex {...homeObjThree} img={svg3} />
+            <InfoIndex {...homeObjAbout} img={svg1} />
+            <Services/>
+            <InfoIndex {...homeObjSpecs} img={svg2} />
+            <InfoIndex {...homeObjGoals} img={svg3} />
         </>
     )
 }

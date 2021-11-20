@@ -15,16 +15,16 @@ export default function Navbar({toggle}) {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="About">About</NavLinks>
+                            <NavLinks to="about">About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="goals">Goals</NavLinks>
+                            <NavLinks to="services">Services</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="specifications">Specifications</NavLinks>
                         </NavItem>
-                        <NavItem> 
-                            <NavLinks to="signup">Sign Up</NavLinks>
+                        <NavItem>
+                            <NavLinks to="goals">Goals</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
