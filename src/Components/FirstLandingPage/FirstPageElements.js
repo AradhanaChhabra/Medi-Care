@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 import { MdArrowForward ,MdKeyboardArrowRight} from 'react-icons/md'
 
 export const FirstContainer = styled.div`
@@ -93,4 +94,24 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left:8px;
     font-size: 20px;
+`
+export const ButtonF= styled(Link)`
+    border-radius: 50px;
+    background: #8898ff;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color:#F4F9F9;
+    font-size: 16px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #F7F7F7;
+        color:#8898ff ;
+    }
+
 `

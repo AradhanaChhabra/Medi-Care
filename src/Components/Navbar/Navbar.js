@@ -1,4 +1,4 @@
-import React, { useEffect, useState}from 'react'
+import React, { useEffect, useState,useRef}from 'react'
 import { MobileIcon, Nav, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu } from './NavElements'
 import { FaBars } from 'react-icons/fa'
 // import { IconContext } from 'react-icons/lib' ;
@@ -6,9 +6,12 @@ import { animateScroll as scroll } from 'react-scroll';
 
 export default function Navbar({ toggle }) {
     
+    const isScreenMounted = useRef(true);
+    
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
+        if(!isScreenMounted.current) return;
         if (window.scrollY >= 80)
             setScrollNav(true);
         else
@@ -16,7 +19,12 @@ export default function Navbar({ toggle }) {
     }
 
     useEffect(() => {
+        if(!isScreenMounted.current) return;
         window.addEventListener('scroll', changeNav)
+        return () => {
+            // abortController.abort()  
+            isScreenMounted.current = false
+          }
     }, []);
 
     const toggleHome = () => {
