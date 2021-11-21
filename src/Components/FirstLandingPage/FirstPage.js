@@ -10,7 +10,7 @@ export const FirstPage = () => {
         setHover(prev => { return !prev });
     }
     return (
-        <FirstContainer>
+        <FirstContainer id="home">
             <FirstBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </FirstBg>
@@ -22,7 +22,12 @@ export const FirstPage = () => {
                 <PageP>The Others</PageP>
                 <BtnWrapper>
                     <Button
-                        to="signup"
+                        to="about"
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        smooth={true}
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         // primary="true"
