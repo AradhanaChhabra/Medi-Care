@@ -10,7 +10,7 @@ export const FirstPage = () => {
         setHover(prev => { return !prev });
     }
     return (
-        <FirstContainer>
+        <FirstContainer id="home">
             <FirstBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </FirstBg>

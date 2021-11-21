@@ -5,6 +5,7 @@ import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll';
 
 export default function Navbar({ toggle }) {
+    const isScreenMounted = useRef(true);
     
     const isScreenMounted = useRef(true);
     
@@ -19,7 +20,11 @@ export default function Navbar({ toggle }) {
     }
 
     useEffect(() => {
-        if(!isScreenMounted.current) return;
+
+
+        // const abortController = new AbortController();
+        if (!isScreenMounted.current) return;
+        else 
         window.addEventListener('scroll', changeNav)
         return () => {
             // abortController.abort()  
