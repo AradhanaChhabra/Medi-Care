@@ -6,7 +6,7 @@ export const homeObjAbout = {
     topLine: 'About us',
     headline: <div style={{fontSize:'39px'}}>Standardising the process of identification across healthcare providers</div>,
     description: 'This project lays emphasis on the importance of keeping medical/health records in one place to ease the access of using and providing this information to the required personnels. Also we are inspired by the scheme of the government of India of maintaining unique health IDs of individuals.',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Start Today',
     imgStart: false,
     alt: 'health personnels',
     dark: true,
