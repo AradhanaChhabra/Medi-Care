@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
-import { FirstBg, FirstContainer, VideoBg ,PageContent,PageH1,PageP,BtnWrapper,ArrowForward,ArrowRight} from './FirstPageElements'
+import { FirstBg, FirstContainer, VideoBg ,PageContent,PageH1,PageP,BtnWrapper,ArrowForward,ArrowRight,ButtonF} from './FirstPageElements'
 import Video from '../../assets/video2.mp4'
-import { Button } from '../../ui/Button'
+// import { Button } from '../../ui/Button'
 
 export const FirstPage = () => {
 
@@ -21,20 +21,20 @@ export const FirstPage = () => {
                 </PageP>
                 <PageP>The Others</PageP>
                 <BtnWrapper>
-                    <Button
+                    <ButtonF
                         to="about"
+                        smooth={true}
                         duration={500}
                         spy={true}
                         exact='true'
                         offset={-80}
-                        smooth={true}
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
-                        // primary="true"
-                        // dark="true"
+                        primary="true"
+                        dark="true"
                     >
                         Get Started {hover?<ArrowForward/>:<ArrowRight/>}
-                    </Button>
+                    </ButtonF>
                 </BtnWrapper>
             </PageContent>
         </FirstContainer>

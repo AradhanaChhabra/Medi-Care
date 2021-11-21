@@ -32,7 +32,7 @@ export const homeObjGoals = {
         <span style={{display:"block",marginBottom:'20px'}}>Visualizing medical/health data by means of statistics and graph.</span></>
     ,
     buttonLabel: 'Learn More',
-    imgStart: true,
+    imgStart: false,
     alt: 'golas data',
     dark: false,
     primary: false,
@@ -48,7 +48,7 @@ export const homeObjSpecs = {
     headline: 'What we provide?',
     description: 'The above goals will be achieved with a web app integrated with the best possible UI and database and also we are trying to use a native app for easing the acc',
     buttonLabel: 'Get Started',
-    imgStart: false,
+    imgStart: true,
     alt: 'Car',
     dark: true,
     primary: true,

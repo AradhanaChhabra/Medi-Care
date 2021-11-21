@@ -7,6 +7,8 @@ import { animateScroll as scroll } from 'react-scroll';
 export default function Navbar({ toggle }) {
     const isScreenMounted = useRef(true);
     
+    const isScreenMounted = useRef(true);
+    
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -18,6 +20,8 @@ export default function Navbar({ toggle }) {
     }
 
     useEffect(() => {
+
+
         // const abortController = new AbortController();
         if (!isScreenMounted.current) return;
         else 
