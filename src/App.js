@@ -4,6 +4,8 @@ import SignInPage from './pages/SignInPage';
 import First from './pages/First';
 import * as firebase from 'firebase';
 import  firebaseConfig  from '../src/utils/firebase'
+import GraphicalData from './Components/GraphicalData';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='/' element={<First/>} />
+          <Route exact path='/' element={<GraphicalData/>} />
           <Route path='/signin' element={<SignInPage/>} exact/>
         </Routes>
           
