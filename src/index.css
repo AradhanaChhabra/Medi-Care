@@ -8,6 +8,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root {
+  /* Colors */
+  --black: #09090c;
+  --grey: #a4b2bc;
+  --blue:#373f4b;
+  --white: #fff;
+  --background: rgb(244, 250, 252);
+}#f1f4f6
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
