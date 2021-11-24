@@ -1,0 +1,19 @@
+.graphicalContainer{
+    width:60%;
+    margin: 0 auto;
+}
+
+.graphicalContainer h2{
+    margin:2%;
+}
+
+.graphicalCard{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    padding: 2%;
+}
+
+.graphicalInput{
+    padding: 1%;
+}
