@@ -6,7 +6,8 @@ import WelcomeHome from './pages/WelcomeHome/WelcomeHome';
 import Appiontments from './pages/Appointments/Appiontments';
 import HealthRecords from './pages/HealthRecords/HealthRecords';
 // import Welcome from './pages/Welcome';
-import Statistics from './pages/Statistics/Statistics';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Statistics from './pages/Statistics/index';
 
 function App() {
   const login = true;
