@@ -7,7 +7,7 @@ const Statistics = () => {
         <SidebarMain/>
         <div>
             
-            <h1>Statistics yeah</h1>
+            <h1>Statistics hello</h1>
             </div>
         </>
     )
