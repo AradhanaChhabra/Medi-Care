@@ -1,15 +1,15 @@
 import React from 'react'
-import { Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 const graphs = ()=>{
 
     return(
         <div>
-            <Bar data={{
+            <Line data={{
                 labels:['22/09/2021','23/09/2021','24/09/2021','25/09/2021','26/09/2021'],
                 datasets:[
                     {
-                    label: '# of Votes',
+                    label: 'Upper Limit in Hg',
                     data: [90, 120, 120, 150, 100, 120],
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                       borderColor:'rgba(255, 99, 132, 1)',
@@ -17,7 +17,8 @@ const graphs = ()=>{
                     }
                 ]
             }} options={{
-                indexAxis: 'y',
+                indexAxis: 'x',
+                fill:true,
                 // Elements options apply to all of the options unless overridden in a dataset
                 // In this case, we are setting the border of each horizontal bar to be 2px wide
                 elements: {
@@ -27,9 +28,6 @@ const graphs = ()=>{
                 },
                 responsive: true,
                 plugins: {
-                  legend: {
-                    position: 'right',
-                  },
                   title: {
                     display: true,
                     text: 'Hypertension Stats',

@@ -34,7 +34,41 @@ const GraphicalData = ()=>{
                 <Form.Control type="date" size="lg" />             
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="submit" size="lg" style={{backgroundColor:'#8898ff'}} />             
+                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
+                </Form.Group>
+                </Form>
+                </div>
+                <Graph/>
+            </div>
+            <div className="graphicalCard">
+                <h2><BsDot/> Hypertension</h2>
+                <div className="graphicalInput">
+                <Form style={{display:"flex", justifyContent:"space-between"}}>
+                 <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="text" placeholder="Enter Value" size="lg" style={{width:'120%'}} />             
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="date" size="lg" />             
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
+                </Form.Group>
+                </Form>
+                </div>
+                <Graph/>
+            </div>
+            <div className="graphicalCard">
+                <h2><BsDot/> Hypertension</h2>
+                <div className="graphicalInput">
+                <Form style={{display:"flex", justifyContent:"space-between"}}>
+                 <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="text" placeholder="Enter Value" size="lg" style={{width:'120%'}} />             
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="date" size="lg" />             
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
                 </Form.Group>
                 </Form>
                 </div>
