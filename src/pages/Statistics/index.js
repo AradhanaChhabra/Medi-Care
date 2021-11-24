@@ -12,11 +12,12 @@ const GraphicalData = ()=>{
     //     setIsOpen(!isOpen);
     // }
 
-    return(
-        <div className="graphicalData" 
-        style={{position:'relative', top:'80px'}}
-        >
+    return (
+        <>
         <SidebarMain/>
+        <div className="graphicalData" 
+        style={{position:'relative', top:'80px'}}>
+        
         <div className="graphicalContainer">
         <h2>Record your health stats!</h2>
         <hr/>
@@ -75,6 +76,7 @@ const GraphicalData = ()=>{
         </div>
         </div>
         </div>
+        </>
     )
 
 }
