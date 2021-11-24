@@ -1,22 +1,23 @@
-import React,{ useState } from 'react';
+// import React,{ useState } from 'react';
 import './graphicalData.css'
 import { BsDot } from 'react-icons/bs'
-import { FormControl, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import Graph from './graphs';
 import { SidebarMain } from '../../Components/SidebarMain/SidebarMain'
 
 const GraphicalData = ()=>{
 
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => {
-        setIsOpen(!isOpen);
-    }
+    // const [isOpen, setIsOpen] = useState(false);
+    // const toggle = () => {
+    //     setIsOpen(!isOpen);
+    // }
 
-    return(
-        <div className="graphicalData" 
-        style={{position:'relative', top:'80px'}}
-        >
+    return (
+        <>
         <SidebarMain/>
+        <div className="graphicalData" 
+        style={{position:'relative', top:'80px'}}>
+        
         <div className="graphicalContainer">
         <h2>Record your health stats!</h2>
         <hr/>
@@ -75,6 +76,7 @@ const GraphicalData = ()=>{
         </div>
         </div>
         </div>
+        </>
     )
 
 }
