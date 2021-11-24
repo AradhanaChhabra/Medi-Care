@@ -53,7 +53,10 @@ export default function Navbar({ toggle }) {
                                 exact='true'
                                 offset={-80}
                                 // or add activeClass if not using styledComponents &.active
-                                smooth={true}>
+                                // smooth={true}
+                                delay={0}
+                                smooth='easeInSine'
+                            >
                                 About
                             </NavLinks>
                         </NavItem>
@@ -64,14 +67,18 @@ export default function Navbar({ toggle }) {
                                 spy={true}
                                 exact='true'
                                 offset={-80}
-                                smooth={true}>Services
+                                // smooth={true}
+                                delay={0}
+                                smooth='easeInSine'
+                            >Services
                             </NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks
                                 to="specifications"
-                                smooth={true}
-                                duration={500}
+                                delay={0}
+                                smooth='easeInSine'
+                                duration={300}
                                 spy={true}
                                 exact='true'
                                 offset={-80}
@@ -85,7 +92,10 @@ export default function Navbar({ toggle }) {
                                 spy={true}
                                 exact='true'
                                 offset={-80}
-                                smooth={true}>
+                                // smooth={true}
+                                delay={0}
+                                smooth='easeInSine'
+                            >
                                 Goals
                             </NavLinks>
                         </NavItem>
