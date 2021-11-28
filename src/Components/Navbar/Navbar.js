@@ -55,7 +55,7 @@ export default function Navbar({ toggle }) {
                                 // or add activeClass if not using styledComponents &.active
                                 // smooth={true}
                                 delay={0}
-                                smooth='easeInSine'
+                                smooth={true}
                             >
                                 About
                             </NavLinks>
@@ -69,7 +69,7 @@ export default function Navbar({ toggle }) {
                                 offset={-80}
                                 // smooth={true}
                                 delay={0}
-                                smooth='easeInSine'
+                                smooth={true}
                             >Services
                             </NavLinks>
                         </NavItem>
@@ -77,8 +77,8 @@ export default function Navbar({ toggle }) {
                             <NavLinks
                                 to="specifications"
                                 delay={0}
-                                smooth='easeInSine'
-                                duration={300}
+                                smooth={true}
+                                duration={500}
                                 spy={true}
                                 exact='true'
                                 offset={-80}
@@ -94,7 +94,7 @@ export default function Navbar({ toggle }) {
                                 offset={-80}
                                 // smooth={true}
                                 delay={0}
-                                smooth='easeInSine'
+                                smooth={true}
                             >
                                 Goals
                             </NavLinks>

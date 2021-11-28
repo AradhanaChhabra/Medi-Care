@@ -15,8 +15,8 @@ const GraphicalData = ()=>{
     return (
         <>
         <SidebarMain/>
-        <div className="graphicalData" 
-        style={{position:'relative', top:'80px'}}>
+        {/* <div className="graphicalData" 
+        style={{height:"100vh"}}> */}
         
         <div className="graphicalContainer">
         <h2>Record your health stats!</h2>
@@ -75,7 +75,7 @@ const GraphicalData = ()=>{
             </div>
         </div>
         </div>
-        </div>
+        {/* </div> */}
         </>
     )
 

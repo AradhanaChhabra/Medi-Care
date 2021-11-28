@@ -14,6 +14,7 @@ export default function Register(props) {
 
     // validating form inputs using custom hook
     const [isFormValid, setIsFormValid] = useState(true);
+    // const toLogin = props.loginFunc;
     const {
         value: usernameInput,
         isValueValid: isUsernameValid,
@@ -62,8 +63,12 @@ export default function Register(props) {
             // });
 
             //storing username
-
+            
             console.log("Form Valid");
+            if (props.loginHandler) {
+                props.loginHandler();
+            }
+            
              
         }
         else {
