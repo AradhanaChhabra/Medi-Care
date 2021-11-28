@@ -212,7 +212,7 @@ export const SidebarMain = () => {
                     <img src={logo} alt="logo"/>
                 </Logo>
                 <SlickBar clicked={click}>
-                    <Item onClick={()=>setClick(false)} exact="true"  to="/homePage">
+                    <Item onClick={()=>setClick(false)}  to="/homePage">
                         <img src={home} alt="home"></img>
                         <Text clicked={click}>Home</Text>
                     </Item>
@@ -224,7 +224,7 @@ export const SidebarMain = () => {
                         <img src={records} alt="Heath records"></img>
                         <Text clicked={click}>Health Records</Text>
               </Item>
-              <Item onClick={()=>setClick(false)} to="/stats">
+              <Item onClick={()=>setClick(false)} exact="true" to="/stats">
                         <img src={graph} alt="stats"></img>
                         <Text clicked={click}>Statistics</Text>
                     </Item>

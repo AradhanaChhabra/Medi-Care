@@ -6,7 +6,7 @@ const HealthRecords = () => {
         <>
             <SidebarMain/>
         <div>
-            <h1>HEALTH RECORDS</h1>
+            <h1 style={{ textAlign: "center" }}>HEALTH RECORDS</h1>
         </div>
         </>
     )

@@ -6,7 +6,7 @@ const WelcomeHome = () => {
         <>
         <SidebarMain/>
         <div>
-            <h1>Welcome User!</h1>
+            <h1 style={{textAlign:"center"}}>Welcome User!</h1>
         </div>
         </>
     )

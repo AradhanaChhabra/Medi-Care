@@ -45,6 +45,7 @@ export default function Login(props) {
         //    console.log(error)
         // });
             console.log("VALID");
+            props.loginHandler();
         }
         else console.log("INVALID")
 

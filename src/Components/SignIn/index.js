@@ -4,13 +4,14 @@ import Register from './Register';
 import Login from './Login';
 import './style.scss'
 
-export default function SignIn() {
+export default function SignIn(prop) {
+
     const [isLogin, setIsLogin] = useState(true);
     const [rightsideCLass, setrightsideCLass] = useState(`right-side right`);
     const current = isLogin ? "Register" : "Login";
     const currentActive = isLogin ? "login" : "register";
 
-  const changeState=()=> {
+  const changeState = () => {
     if (isLogin) {
       setrightsideCLass(`right-side left`);
     }
@@ -25,8 +26,8 @@ export default function SignIn() {
             <div className="login">
         <div className="container">
         {/* <h3 className="heading">HACK YOUR EXPENSES !</h3> */}
-          {isLogin && <Login></Login>}
-          {!isLogin&&<Register/>}
+          {isLogin && <Login loginHandler={prop.loginHandler}></Login>}
+            {!isLogin && <Register loginHandler={prop.loginHandler}/>}
         </div>
         <RightSide
           class={rightsideCLass}

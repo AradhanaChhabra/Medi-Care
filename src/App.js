@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import SignInPage from './pages/SignInPage';
@@ -10,13 +11,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Statistics from './pages/Statistics/index';
 
 function App() {
-  const login = true;
+  const [login, setIsLogin] = useState(false);
+  const loginHandler = () => {
+    setIsLogin(true);
+    console.log("heyyyy");
+  }
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route exact path='/' element={<First/>} />
-          <Route path='/homepage/*' element={login?<WelcomeHome/>:<SignInPage/>}/>
+          <Route path='/homepage/*' element={login ? <WelcomeHome /> : <SignInPage loginHandler={loginHandler}/>}/>
           {/* <Route path='/welcome' element={<Welcome />}></Route> */}
           {/* <Route exact path="/welcomeHome" element={<WelcomeHome/>} /> */}
           <Route path="/appointments" element={<Appiontments/>} />

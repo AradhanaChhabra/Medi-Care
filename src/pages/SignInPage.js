@@ -1,9 +1,9 @@
 import React from 'react'
 import SignIn from '../Components/SignIn'
 
-export default function SignInPage(){
+export default function SignInPage(props){
     return (
-        <SignIn/>
+        <SignIn loginHandler={props.loginHandler} />
     )
 }
 
