@@ -212,10 +212,10 @@ export const SidebarMain = () => {
                     <img src={logo} alt="logo"/>
                 </Logo>
                 <SlickBar clicked={click}>
-                    <Item onClick={()=>setClick(false)}  to="/homePage">
+                    {/* <Item onClick={()=>setClick(false)}  to="/homePage">
                         <img src={home} alt="home"></img>
                         <Text clicked={click}>Home</Text>
-                    </Item>
+                    </Item> */}
                     <Item onClick={()=>setClick(false)}  to="/appointments">
                         <img src={appointments} alt="appointments"></img>
                         <Text clicked={click}>Appointments</Text>

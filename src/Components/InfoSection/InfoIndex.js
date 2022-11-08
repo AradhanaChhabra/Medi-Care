@@ -15,7 +15,7 @@ export const InfoIndex = ({lightBg,id,imgStart,topLine,headline,lightText,darkTe
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
                                     <Button
-                                        to="/homepage"
+                                        to="/appointments"
                                         // smooth={true}
                                         // duration={500}
                                         // spy={true}

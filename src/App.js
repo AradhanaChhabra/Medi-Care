@@ -11,6 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Statistics from './pages/Statistics/index';
 
 function App() {
+
+  //setting local storage
+  //localStorage.setItem('apps',[])
+
   const [login, setIsLogin] = useState(false);
   const loginHandler = () => {
     setIsLogin(true);
@@ -21,10 +25,10 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<First/>} />
-          <Route path='/homepage/*' element={login ? <WelcomeHome /> : <SignInPage loginHandler={loginHandler}/>}/>
+          <Route path='/appointments' element={login ? <Appiontments/> : <SignInPage loginHandler={loginHandler}/>}/>
           {/* <Route path='/welcome' element={<Welcome />}></Route> */}
           {/* <Route exact path="/welcomeHome" element={<WelcomeHome/>} /> */}
-          <Route path="/appointments" element={<Appiontments/>} />
+          {/* <Route path="/appointments" element={<Appiontments/>} /> */}
           <Route path="/healthRecords" element={<HealthRecords/>} />
           <Route path="/stats" element={<Statistics/>} />
         </Routes>
