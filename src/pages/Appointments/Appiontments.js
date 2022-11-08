@@ -45,8 +45,6 @@ const Appiontments = () => {
         }
     }
 
-    console.log(appointments)
-
     return (
         <>
             <SidebarMain/>
@@ -61,7 +59,7 @@ const Appiontments = () => {
                  <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="text"
                  placeholder="Enter Value" 
-                 ref="text"
+
                  onChange={(e)=>inputHandler(e.target.value,"regarding")}
                  size="lg" 
                  style={{width:'50%'}} />             
@@ -69,7 +67,7 @@ const Appiontments = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="text"
                  placeholder="Enter Value" 
-                 ref="text"
+                 
                  onChange={(e)=>inputHandler(e.target.value,"doctorName")}
                  size="lg"
                  style={{width:'50%'}} />             
@@ -77,7 +75,7 @@ const Appiontments = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control type="date" size="lg" style={{width:'50%'}}
                 onChange={(e)=>inputHandler(e.target.value,"date")}
-                ref="text"
+    
                 />             
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
