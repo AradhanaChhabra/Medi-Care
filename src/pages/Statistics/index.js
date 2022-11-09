@@ -1,4 +1,4 @@
-// import React,{ useState } from 'react';
+import React,{ useState } from 'react';
 import './graphicalData.css'
 import { BsDot } from 'react-icons/bs'
 import { Form } from 'react-bootstrap';
@@ -7,11 +7,42 @@ import { SidebarMain } from '../../Components/SidebarMain/SidebarMain'
 
 const GraphicalData = ()=>{
 
-    // const [isOpen, setIsOpen] = useState(false);
-    // const toggle = () => {
-    //     setIsOpen(!isOpen);
-    // }
+    const [stats,setStats] = useState([])
+    const [stat,setStat] = useState({
+        date:"",
+        upper:"",
+        lower:""
+    })  
 
+    const submitHandler = (e,stat)=>{
+        e.preventDefault()
+        var arr = []
+        if(stats.length)
+        {
+            setStats(apps=>{
+                return [...apps,stat]
+            })
+        } else {
+            arr.push(stat)
+            setStats(arr)
+        } 
+        setStat({
+            date:"",
+            upper:"",
+            lower:""
+        })
+      
+    }
+
+    const inputHandler = (value,type)=>{
+        if(value)
+        {
+            setStat((app)=>{
+                app[type]=value
+                return app
+            })
+        }
+    }
     return (
         <>
         <SidebarMain/>
@@ -24,54 +55,37 @@ const GraphicalData = ()=>{
         <div>
             <div className="graphicalCard">
                 <h2><BsDot/> Hypertension</h2>
-                <div className="graphicalInput">
-                <Form style={{display:"flex", justifyContent:"space-between"}}>
-                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" placeholder="Enter Value" size="lg" style={{width:'120%'}} />             
+                 <div className="graphicalInput">
+                <Form style={{display:"flex", justifyContent:"space-between", flexDirection:"column" }}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="text"
+                 placeholder="Upper Value" 
+                 onChange={(e)=>inputHandler(e.target.value,"upper")}
+                 size="lg" 
+                 style={{width:'50%'}} />             
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="date" size="lg" />             
+                <Form.Control type="text"
+                 placeholder="Lower Value"                  
+                 onChange={(e)=>inputHandler(e.target.value,"lower")}
+                 size="lg"
+                 style={{width:'50%'}} />             
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
+                <Form.Control type="date" size="lg" style={{width:'50%'}}
+                onChange={(e)=>inputHandler(e.target.value,"date")}    
+                />             
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="submit"
+                 size="lg" 
+                 style={{backgroundColor:'rgba(255, 99, 132, 1)', width:"50%"}}
+                 onClick={(e)=>submitHandler(e,stat)}
+                 />             
                 </Form.Group>
                 </Form>
                 </div>
-                <Graph/>
-            </div>
-            <div className="graphicalCard">
-                <h2><BsDot/> Hypertension</h2>
-                <div className="graphicalInput">
-                <Form style={{display:"flex", justifyContent:"space-between"}}>
-                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" placeholder="Enter Value" size="lg" style={{width:'120%'}} />             
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="date" size="lg" />             
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
-                </Form.Group>
-                </Form>
-                </div>
-                <Graph/>
-            </div>
-            <div className="graphicalCard">
-                <h2><BsDot/> Hypertension</h2>
-                <div className="graphicalInput">
-                <Form style={{display:"flex", justifyContent:"space-between"}}>
-                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" placeholder="Enter Value" size="lg" style={{width:'120%'}} />             
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="date" size="lg" />             
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="submit" size="lg" style={{backgroundColor:'rgba(255, 99, 132, 1)'}} />             
-                </Form.Group>
-                </Form>
-                </div>
-                <Graph/>
+                <Graph stats={stats}/>
             </div>
         </div>
         </div>

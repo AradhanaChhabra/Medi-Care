@@ -220,10 +220,6 @@ export const SidebarMain = () => {
                         <img src={appointments} alt="appointments"></img>
                         <Text clicked={click}>Appointments</Text>
               </Item>
-              <Item onClick={()=>setClick(false)} to="/healthRecords">
-                        <img src={records} alt="Heath records"></img>
-                        <Text clicked={click}>Health Records</Text>
-              </Item>
               <Item onClick={()=>setClick(false)} exact="true" to="/stats">
                         <img src={graph} alt="stats"></img>
                         <Text clicked={click}>Statistics</Text>

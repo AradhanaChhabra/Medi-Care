@@ -1,21 +1,31 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2';
 
-const graphs = ()=>{
+const graphs = ({stats})=>{
 
+    const dates = [...stats.map((obj=> obj.date))]
+    const uppers = [...stats.map((obj=> obj.upper))]
+    const lowers = [...stats.map((obj=> obj.lower))]
 
     return(
         <div>
             <Line data={{
-                labels:['22/09/2021','23/09/2021','24/09/2021','25/09/2021','26/09/2021'],
+                labels:dates,
                 datasets:[
                     {
                     label: 'Upper Limit in Hg',
-                    data: [90, 120, 120, 150, 100, 120],
+                    data: uppers,
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                       borderColor:'rgba(255, 99, 132, 1)',
                       borderWidth: 1,
-                    }
+                    },
+                    {
+                      label: 'Lower Limit in Hg',
+                      data:lowers,
+                      backgroundColor: 'rgba(75, 192, 192,0.2)',
+                        borderColor:'rgba(75, 192, 192,1)',
+                        borderWidth: 1,
+                      }
                 ]
             }} options={{
                 indexAxis: 'x',
