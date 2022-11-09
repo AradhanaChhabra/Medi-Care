@@ -15,7 +15,7 @@ export const FirstPage = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </FirstBg>
             <PageContent>
-                <PageH1>HackForTommorow: MediCare</PageH1>
+                <PageH1>MediCare</PageH1>
                 <PageP>
                     Aradhana Chhabra and Yashasavee Kesarwani
                 </PageP>
